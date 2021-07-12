@@ -42,7 +42,7 @@ inputs:
       Required only if you use service account authentication.
     title: Service Credentials File
   service_credentials_file: null
-- app_path: '{{getenv "BITRISE_IPA_PATH" | getenv "BITRISE_AAB_PATH"}}'
+- app_path: $(echo $BITRISE_IPA_PATH)
   opts:
     description: |-
       Path of IPA, APK or AAB file to deploy.
